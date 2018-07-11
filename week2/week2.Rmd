@@ -1,10 +1,5 @@
-source('pttTestFunction.R')
-id = c(6125:6126)
-URL = paste0("https://www.ptt.cc/bbs/NBA/index", id, ".html")
-filename = paste0(id, ".txt")
-pttTestFunction(URL[1], filename[1])
-mapply(pttTestFunction, 
-       URL = URL, filename = filename)
+```{r}
+
 rm(list=ls(all.names = TRUE))
 library(NLP)
 library(tm)
@@ -54,4 +49,6 @@ wordcloud(freqFrame$Var1,freqFrame$Freq,
           rot.per=.1, colors=brewer.pal(8, "Dark2"),
           ordered.colors=FALSE,use.r.layout=FALSE,
           fixed.asp=TRUE)
+
+```
 
