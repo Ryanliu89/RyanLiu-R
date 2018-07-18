@@ -1,3 +1,4 @@
+```{r}
 #install.packages("ggplot2")
 library(ggplot2)
 df <- iris
@@ -33,3 +34,4 @@ ggplot(data = iris, aes(x =Petal.Width, y=Sepal.Length)) +
 
 ggplot(iris, aes(x=Petal.Width, y=Species)) +
   geom_boxplot()
+```
